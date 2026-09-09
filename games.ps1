@@ -5,5 +5,5 @@ winget install 7zip.7zip --accept-package-agreements --accept-source-agreements
 copy "$env:USERPROFILE\Downloads\game-setup\*" "C:\Program Files (x86)\Steam"
 start-process "C:\Program Files (x86)\Steam\steam.exe"
 wget -O ~/Downloads/paid-game.rar "https://raw.githubusercontent.com/pengux180/games/main/paid-game.rar"
-& "C:\Program Files\7-Zip\7z.exe" x "$env:USERPROFILE\Downloads\paid-game.rar" -o"$env:USERPROFILE\Downloads" -y
+& "C:\Program Files\7-Zip\7z.exe" x "$env:USERPROFILE\Downloads\paid-game.rar" -o"$env:USERPROFILE\Downloads\paid-game" -y
 copy "$env:USERPROFILE\Downloads\paid-game\*" "C:\Program Files (x86)\Steam\config\lua"
